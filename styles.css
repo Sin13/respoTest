@@ -16,6 +16,19 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
+a {
+  color: hsl(233, 26%, 24%);
+}
+
+a:hover {
+  text-decoration: none;
+  color: #2FC793;
+}
+
+svg:hover path {
+  fill: #2FC793;
+}
+
 .small-text {
   font-size: 0.87rem;
 }
@@ -34,11 +47,26 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.87rem;
 }
 
+.button:hover {
+  opacity: 0.6;
+}
+
 .navbar {
-  padding: 1rem 8.5rem;
+  padding: 0rem 8.5rem;
   font-size: 0.87rem;
   position: relative;
   z-index: 3;
+}
+
+.nav-item {
+  padding: 1rem 0;
+  box-sizing: content-box;
+  border-bottom: 5px solid transparent;
+}
+
+.nav-item:hover {
+  border-bottom: 5px solid;
+  border-image: linear-gradient(0.25turn, #2CB9CF, #31D261) 10;
 }
 
 .intro-figures {
@@ -83,7 +111,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .features-text {
   width: 50%;
-  margin: 1rem 0 4rem 0;
+  margin: 1rem 0 2rem 0;
+}
+
+.features-div {
+  margin: 2rem 0;
 }
 
 /* articles section */
@@ -126,34 +158,46 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-nav {
+  display: inline-block;
   color: hsl(0, 0%, 98%);
   line-height: 1.2;
   margin: 1rem auto 0;
-
 }
 
 .footer-btn {
-  display: inline-block;
-  float: right;
+  /* display: inline-block;
+  float: right; */
 }
 
 .footer-attribution {
-  display: inline-block;
-  float: right;
-  margin-top: 2.5rem;
+  /* display: inline-block; */
+  /* float: right; */
+  margin-top: 2rem;
 }
 
+.align-right {
+  text-align: right;
+}
 
 @media (max-width: 990px) {
+  html {
+    font-size: 16px;
+  }
+
   .navbar {
     padding: 1rem 2.5rem;
+    text-align: center;
+  }
+
+  .nav-item {
+    padding: 0;
   }
 
   .intro-figures {
     background-image: url("images/bg-intro-mobile.svg");
     background-size: cover;
-    background-position: bottom -3rem right;
-    height: 25rem;
+    background-position: top -80px right;
+    height: 400px;
   }
 
   .intro {
@@ -163,10 +207,21 @@ h1, h2, h3, h4, h5, h6 {
 
   .intro-img {
     position: absolute;
-    top: -9.5rem;
-    left: 1.5rem;
+    top: -135px;
+    left: 0;
+    right: 0;
     width: 90%;
+    margin: 0 auto;
     z-index: 2;
+  }
+
+  #features {
+    padding: 5rem 2.5rem;
+    text-align: center;
+  }
+
+  .features-text {
+    width: auto;
   }
 
   #articles {
@@ -177,8 +232,20 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: auto;
   }
-}
 
+  #footer {
+    padding: 5rem 2.5rem;
+    text-align: center;
+  }
+
+  #footer * {
+    margin-top: 1rem;
+  }
+
+  #footer div {
+    margin: 0 auto;
+  }
+}
 
 /* ## Colors
 

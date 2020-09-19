@@ -90,6 +90,7 @@ svg:hover path {
 
 #header {
   background-color: hsl(0, 0%, 98%);
+  overflow-x: hidden;
   /* height: 35rem; */
   /* padding-left: 9rem; */
   /* overflow-y: visible; */

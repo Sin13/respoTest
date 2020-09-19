@@ -74,7 +74,7 @@ svg:hover path {
   background-image: url("images/bg-intro-desktop.svg");
   background-position: left -250px;
   background-repeat: no-repeat;
-  height: 35rem;
+/*   height: 35rem; */
 }
 
 .intro-img {
@@ -90,8 +90,8 @@ svg:hover path {
 
 #header {
   background-color: hsl(0, 0%, 98%);
-  overflow-x: hidden;
-  /* height: 35rem; */
+/*   overflow-x: hidden; */
+  height: 35rem;
   /* padding-left: 9rem; */
   /* overflow-y: visible; */
 }

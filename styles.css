@@ -7,7 +7,7 @@ body {
   font-family: 'Public Sans', sans-serif;
   font-weight: 400;
   overflow-x: hidden;
-  background-color: red;
+  background-color: blue;
   /* font-size: 1.2rem; */
 }
 
@@ -74,7 +74,7 @@ svg:hover path {
   background-image: url("images/bg-intro-desktop.svg");
   background-position: left -250px;
   background-repeat: no-repeat;
-/*   height: 35rem; */
+  height: 35rem;
 }
 
 .intro-img {
@@ -90,10 +90,13 @@ svg:hover path {
 
 #header {
   background-color: hsl(0, 0%, 98%);
-/*   overflow-x: hidden; */
-  height: 35rem;
+  /* height: 35rem; */
   /* padding-left: 9rem; */
   /* overflow-y: visible; */
+}
+
+.header-row {
+  margin: 0;
 }
 
 #header h1 {
